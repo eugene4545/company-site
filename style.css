@@ -1,0 +1,147 @@
+html{
+    font-size: 62.5%;
+    
+}
+body{
+    font-family: marcellus;
+    margin: 0;
+    background: rgb(1, 12, 128)
+}
+
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.logo svg{
+    width: 30%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks{
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    gap: 13px;
+    padding: 15px;
+    margin-top: 12px;
+    
+    
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;   
+}
+
+
+#hero-video{
+    padding-left: 30px;
+    height: 350px;
+
+}
+
+main{
+    display: flex !important;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 8em;
+
+}
+
+main.left-col{
+    width: 800px;
+    float: left;
+}
+
+main.right-col{
+    width: 600px;
+    float: right;  
+}
+
+.right-col{
+    color: #ffff;
+    position: relative;
+}
+
+.heading{
+    margin: 1px;
+    font-size: 40px;
+}
+
+.sub-head{
+    font-size: 15px;
+    
+}
+
+.main-cta{
+    position: absolute;
+    color: white;
+   font-size: 30px;
+   border: 5px solid white;
+   border-radius: 100px;
+   width: 200px;
+   text-decoration: none;
+   text-align: center;
+   padding: 22px;
+   margin-left: 200px;
+   margin-top: 22px;
+}
+
+footer{
+    background-color: #ffff;
+}
+
+.footer-sec>*{
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10px
+}
+
+#footer-video{
+    width: 100%;
+    height: 60vh;
+}
+
+.card-details{
+    background: white;
+    height: 50%;
+
+}
+
+ .product-title{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(1, 12, 128);
+}
+
+.help{
+    font-size: 30px;
+}
+
+.product-info{
+    font-size: 15px;
+    color: black;
+    
+}
+
+.help{
+    line-height: 80px;
+    position: relative;
+}
+.help-illus{
+    height: 160px;
+    position: absolute;
+    top: 108%;
+    left: 17%;
+
+}
+
+
