@@ -19,6 +19,20 @@ body{
     height: auto;
 }
 
+
+.direc-sec svg{
+    width: 2.3%;
+    height: auto;
+    transition: transform .6s;
+}
+
+.direc-sec:hover svg{
+    transform: translateX(18px);
+}
+
+.help:hover{
+    text-decoration: underline;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -38,9 +52,38 @@ header{
 
 nav ul li a{
     color: white;
-    text-decoration: none;   
+    position: relative;
+    text-decoration: none;
 }
 
+ a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    left: 0;
+    height: 2.5px;
+    background-color: white;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.btn1:hover::after{
+    transform: scale(1);
+}
+
+.btn2:hover::after{
+    transform: scale(1);
+}
+
+.btn3:hover::after{
+    transform: scale(1);
+}
+
+.btn4:hover::after{
+    transform: scale(1);
+}
 
 #hero-video{
     padding-left: 30px;
@@ -56,14 +99,18 @@ main{
 
 }
 
+
+
 main.left-col{
     width: 800px;
     float: left;
+
 }
 
 main.right-col{
     width: 600px;
-    float: right;  
+    float: right;
+ 
 }
 
 .right-col{
@@ -93,16 +140,76 @@ main.right-col{
    padding: 22px;
    margin-left: 200px;
    margin-top: 22px;
+   background: transparent;
 }
+.main-cta:hover{
+    border: 5px solid white;
+    background: #ffff;
+    transition: 1.5s;
+    color: rgb(1, 12, 128);
+}
+
+
 
 footer{
     background-color: #ffff;
 }
 
+.icons{
+    font-size: 25px;
+    padding: 12px;
+    width: 100px;
+    text-align: center;
+    color: #ffff;
+    width: 200px;
+    margin-left: 400px;
+    padding-left: 200px;
+
+}
+
+.icons>*{
+    padding: 4px;
+    cursor: pointer;
+}
+
+.separator-smal>*l{
+    color: red;
+    height: 50px;
+    width: 1000px
+    
+}
+
+.copyright{
+    padding-left: 550px;
+    color: #ffff;
+    font-size: 14px;
+}
+
+.end{
+    background: rgb(1, 12, 128);
+}
+
+.web{
+    display: flex;
+    list-style-type: none;
+    gap: 5px;
+    text-decoration: underline;
+    padding-left: 580px;
+    font-size: 14px;
+    color: #fff;
+    background: rgb(1, 12, 128);
+    cursor: pointer;
+}
+
+.social{
+    background: rgb(1, 12, 128);
+}
+
 .footer-sec>*{
     display: flex !important;
     flex-direction: row !important;
-    gap: 10px
+    gap: 14px;
+    
 }
 
 #footer-video{
@@ -110,11 +217,63 @@ footer{
     height: 60vh;
 }
 
+.footlog{
+   margin-left: 120px;
+}
+.g-wrapper{
+    display: flex !important;
+    gap: 10em;
+    flex-direction: row !important;
+    position: relative;
+    padding-right: 80px;
+    
+}
+
+.a-wrapper{
+    line-height: 20px;
+}
+.b-wrapper
+
+.c-wrapper{
+    line-height: 17px;
+    
+}
+ /* to be used after importing icons
+.separator{
+    color: rgba(245,245,245,0.65)!important;
+    border-top-width: 1px!important;
+    border-color:#ffff!important;
+    border-top-style: solid!important
+}
+*/
+
+.head{
+    font-size: 26px;
+}
+
+.abt-quck{
+    font-size: 14px;
+    list-style-type: none;
+    line-height: 20px;
+}
+.head2{
+    font-size: 20px;
+}
+.pita{
+    font-size: 14px;
+}
+
+
+    
+
 .card-details{
     background: white;
     height: 50%;
+    box-shadow: rgb(217, 216, 216);
+    
 
 }
+
 
  .product-title{
     text-decoration: none;
@@ -135,13 +294,79 @@ footer{
 .help{
     line-height: 80px;
     position: relative;
+    
 }
-.help-illus{
+.help-gra{
     height: 160px;
     position: absolute;
     top: 108%;
     left: 17%;
+}
+
+.direc-sec{
+    cursor: pointer;
+}
+
+
+
+.abt-links{
+    position: relative;
+    display: flex;
+    padding-top: 70px;
+    flex-direction: row;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(1, 12, 128);
+    
+    
+}
+
+.line{
+    position: absolute;
+    width: 600px;
+    left: 30%;
+    top: 100%;
+    background: #ffff;
+    height: 1.5px;
+}
+
+
+.abt-images{
+    width: 200px;
+    height: 150px;
+    padding-right: 40px;
+    
 
 }
 
 
+
+
+.wrapper{
+   position: relative;
+    z-index: 999;
+    background: rgb(1, 12, 128);
+    width: 100%;
+    height: 100%;
+    animation: reveal 1s ease-in forwards;
+    transform-origin: bottom;
+}
+
+@keyframes reveal{
+    from{
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+/*
+main{
+    animation: growIn 2s cubic-bezier(0.075,0.82,0.165,1)forward;
+    transform: scale(.4);
+}
+*/
+
+
+ 
